@@ -1,0 +1,7 @@
+Understanding the Data Ecosystem
+  A data ecosystem consists of various elements that interact to produce, manage, store, organize, analyze, and share data, including hardware, software, and the people who use them.
+  The cloud serves as a virtual location for storing data online, allowing data access over the internet rather than on local hard drives.
+
+Common Misconceptions in Data Analytics
+  Data scientists and data analysts have different roles: data scientists create new questions using data, while analysts find answers to existing questions.
+  Data analysis involves collecting and organizing data to draw conclusions, whereas data analytics is a broader concept encompassing all aspects of managing and using data.
