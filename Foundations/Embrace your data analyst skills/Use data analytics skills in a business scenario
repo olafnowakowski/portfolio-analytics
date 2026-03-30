@@ -1,0 +1,41 @@
+Example: Improving Product Sales in Retail Operations
+  Scenario: 
+    Imagine you are an operations manager at a retail company, and you want to use data analysis to improve product sales.
+
+Curiosity: 
+    You start by asking questions like, "Which products have the highest sales during different seasons?" or "Is there a correlation between marketing spend and sales revenue for specific product categories?"
+
+Understanding Context: 
+    You consider external factors such as holidays, local events, or economic conditions that might affect customer buying behavior. For example, sales of winter clothing might spike before the holiday season or during a cold snap.
+
+Technical Mindset: 
+    You systematically clean and organize sales data, marketing costs, and inventory levels to ensure accuracy. You use tools like Excel or SQL to query and prepare the data for analysis.
+
+Data Design: 
+    You structure your dataset to group sales by product category, region, and time period, which helps you identify patterns such as which regions respond best to certain promotions.
+
+Data Strategy: 
+    You decide to focus your analysis on the next quarter's sales to quickly implement actionable insights. You might use a dashboard tool like Power BI to visualize sales trends and monitor the impact of marketing campaigns in real-time.
+
+Why this example is relevant:
+  It mirrors the process of exploratory data analysis (EDA) described in the course, where curiosity drives question formulation, context helps interpret data, and technical skills enable data preparation and analysis.
+  It connects directly to your professional background in operations management and your interest in data analysis and business intelligence, showing how these inherent analytical skills apply in a real business setting.
+  It demonstrates how combining these skills with appropriate tools and strategies can lead to data-driven decisions that improve business outcomes.
+
+This course content focuses on the inherent analytical skills that data analysts possess and how these skills can be applied in real-world business scenarios, using a case study of a film production company.
+
+Inherent Analytical Skills
+
+Key skills include curiosity, understanding of context, technical mindset, data design, and data strategy.
+These skills form the foundation for effective data analysis and decision-making.
+Case Study: Mega-Pik International
+
+Mega-Pik is facing declining movie revenues and wants to use data-driven strategies to improve.
+Objectives for exploratory data analysis (EDA) include identifying factors for opening weekend success, understanding budget-revenue relationships, and determining successful genres.
+Applying Analytical Skills
+
+Curiosity drives asking relevant questions and exploring data creatively.
+Understanding context involves considering external factors like release timing, holidays, and audience demographics.
+A technical mindset helps in systematically cleaning, organizing, and analyzing data.
+Data design focuses on structuring data to reveal meaningful patterns.
+Data strategy involves choosing appropriate tools and prioritizing analyses to deliver actionable insights efficiently.
