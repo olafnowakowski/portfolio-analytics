@@ -25,17 +25,16 @@ Why this example is relevant:
 This course content focuses on the inherent analytical skills that data analysts possess and how these skills can be applied in real-world business scenarios, using a case study of a film production company.
 
 Inherent Analytical Skills
-
-Key skills include curiosity, understanding of context, technical mindset, data design, and data strategy.
+  Key skills include curiosity, understanding of context, technical mindset, data design, and data strategy.
 These skills form the foundation for effective data analysis and decision-making.
+
 Case Study: Mega-Pik International
+  Mega-Pik is facing declining movie revenues and wants to use data-driven strategies to improve.
+  Objectives for exploratory data analysis (EDA) include identifying factors for opening weekend success, understanding budget-revenue relationships, and determining successful genres.
 
-Mega-Pik is facing declining movie revenues and wants to use data-driven strategies to improve.
-Objectives for exploratory data analysis (EDA) include identifying factors for opening weekend success, understanding budget-revenue relationships, and determining successful genres.
 Applying Analytical Skills
-
-Curiosity drives asking relevant questions and exploring data creatively.
-Understanding context involves considering external factors like release timing, holidays, and audience demographics.
-A technical mindset helps in systematically cleaning, organizing, and analyzing data.
-Data design focuses on structuring data to reveal meaningful patterns.
-Data strategy involves choosing appropriate tools and prioritizing analyses to deliver actionable insights efficiently.
+  Curiosity drives asking relevant questions and exploring data creatively.
+  Understanding context involves considering external factors like release timing, holidays, and audience demographics.
+  A technical mindset helps in systematically cleaning, organizing, and analyzing data.
+  Data design focuses on structuring data to reveal meaningful patterns.
+  Data strategy involves choosing appropriate tools and prioritizing analyses to deliver actionable insights efficiently.
