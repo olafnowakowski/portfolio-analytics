@@ -2,4 +2,10 @@ There are six phases in the data life cycle, which culminate with analyze, archi
   Plan, capture, manage
 
 Fill in the blank: During the _____ phase, data teams decide what kind of data is needed and who will be responsible for it.
-  
+  planning
+
+A data team considers how and where data will be stored, what tools are required to safeguard it, and how to maintain it properly. What phase of the data life cycle does this scenario describe?
+  Manage
+
+What is the term for the computer system in which organizations store their data?
+  Database
