@@ -1,18 +1,24 @@
 The data life cycle consists of six key stages, each with its own role in handling data effectively:
 Plan: 
-  This is the stage where a business decides what data it needs and how it will be managed. For example, an electricity provider might plan to collect data on how much electricity customers use, the types of buildings powered, and the devices inside them.
+  Decide what kind of data is needed, how it will be managed, and who will be responsible for it. 
+    For example, an electricity provider might plan to collect data on how much electricity customers use, the types of buildings powered, and the devices inside them.
 
 Capture: 
-  In this phase, data is collected from various sources. For instance, the electricity company gathers usage data from its own databases or might use external data like weather information from public datasets.
+  Collect or bring in data from a variety of different sources. 
+    For instance, the electricity company gathers usage data from its own databases or might use external data like weather information from public datasets.
 
 Manage: 
-  Here, the focus is on storing and maintaining data securely. The company ensures data integrity and privacy while organizing it properly for future use.
+  Care for and maintain the data. This includes determining how and where it is stored and the tools used to do so.
+    The company ensures data integrity and privacy while organizing it properly for future use.
 
 Analyze: 
-  This is where data is examined to solve problems and make decisions. The electricity provider might analyze usage patterns to find ways to help customers save energy.
+ Use the data to solve problems, make decisions, and support business goals.
+    The electricity provider might analyze usage patterns to find ways to help customers save energy.
 
 Archive: 
-  Data that is no longer actively used but still needs to be kept is stored safely. This helps avoid clutter and keeps the working data manageable.
+ Keep relevant data stored for long-term and future reference.
+    This helps avoid clutter and keeps the working data manageable.
 
 Destroy: 
-  Finally, when data is no longer needed, it is securely deleted or shredded to protect privacy and confidentiality.
+  Finally, when data is no longer needed, it is securely deleted or shredded to protect privacy and confidentiality. 
+Note: Be careful not to confuse the six stages of the data life cycle (plan, capture, manage, analyze, archive, and destroy) with the six phases of the data analysis process (ask, prepare, process, analyze, share, and act). They are not interchangeable.
