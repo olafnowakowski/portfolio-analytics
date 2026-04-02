@@ -1,0 +1,17 @@
+Spreadsheets:
+  Definition: A spreadsheet is a digital worksheet that stores, organizes, and sorts data. It helps you see patterns, group information, and find what you need easily.
+  Examples: Microsoft Excel and Google Sheets.
+  What they do: Spreadsheets use formulas and functions to perform calculations and automate tasks, like adding numbers, finding averages, or looking up specific values.
+
+Query Languages:
+  Definition: A query language is a programming language that lets you retrieve and manipulate data from a database.
+  Example: SQL (Structured Query Language).
+  What it does: SQL allows you to communicate with databases by making requests (queries) to select, insert, update, or delete data.
+
+Data Visualization Tools:
+  Definition: These tools create graphical representations of data, like graphs, maps, and tables, to help communicate insights clearly.
+  Examples: Tableau and Looker.
+  What they do: They make complex data easy to understand and share, helping stakeholders make decisions based on visual insights.
+
+Think of these tools as your data toolkit: 
+  spreadsheets help you organize and calculate, query languages help you ask questions and get data, and visualization tools help you tell the story of your data with pictures.
