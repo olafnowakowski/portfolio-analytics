@@ -1,3 +1,7 @@
+# Question
+The finding patterns problem type could involve which of the following actions?
+- Using historical data to create a report that shows when batteries have been replaced on critical equipment 
+> The finding patterns problem type could involve using historical data to create a report that shows when batteries on critical equipment have been replaced. 
 # 1. Making Predictions
 Meaning:
 - Using current and historical data to make an informed guess about what may happen in the future.
