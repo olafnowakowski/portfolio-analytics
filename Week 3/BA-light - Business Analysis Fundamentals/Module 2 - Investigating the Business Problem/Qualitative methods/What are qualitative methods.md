@@ -1,5 +1,8 @@
 # Qualitative Methods for Problem Identification
 
+How do qualitative and quantitative methods differ in their approach to business analysis?
+- Qualitative methods focus on capturing subjective experiences and perceptions through methods like interviews and focus groups, whereas quantitative methods emphasize objective measurements and numerical data
+
 ## Main Idea
 
 Sometimes numbers and large amounts of data are not enough to explain a business problem.
