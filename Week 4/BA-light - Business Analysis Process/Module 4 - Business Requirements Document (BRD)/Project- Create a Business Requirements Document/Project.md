@@ -1,0 +1,3 @@
+In order to assess your learning throughout the course, you will be completing a project in which you will design a business requirements document (BRD) and supporting visual models. You will be given a case study of a business that will provide background information and allow you to answer various questions about a process change.
+
+Overall, this assessment combines your understanding of business requirements gathering, documentation, and visual representation. By applying your knowledge to the provided case study, you will analyze the problem, gather relevant information, and identify specific requirements. The business requirements document and supporting visual models will showcase your ability to propose effective solutions and communicate them.
