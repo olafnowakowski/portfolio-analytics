@@ -101,6 +101,7 @@ Later, as the model becomes more detailed, the box can be filled with more infor
 ---
 
 # Example Classes: Customer, Order, and Product
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e8b8d701-895b-448c-8379-cc461ee0bf2f" />
 
 For a company that sells physical products, a simple business domain model might start with three classes:
 
@@ -170,6 +171,7 @@ In a domain model, associations are often shown with lines connecting the class 
 ---
 
 ## Example Association
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/63c90f0b-47c4-4594-a833-77ecca48c4c9" />
 
 In a customer ordering system:
 
@@ -258,11 +260,11 @@ This happens because the analyst’s understanding of the business becomes clear
 They are added inside the class box.
 
 Attributes help explain what data the business has or needs about each class.
-<img width="402" height="256" alt="image" src="https://github.com/user-attachments/assets/7d306a52-43e9-44b6-9197-153e37d70f12" />
 
 ---
 
 ## Example Attributes
+<img width="402" height="256" alt="image" src="https://github.com/user-attachments/assets/7d306a52-43e9-44b6-9197-153e37d70f12" />
 
 ### Customer Attributes
 
