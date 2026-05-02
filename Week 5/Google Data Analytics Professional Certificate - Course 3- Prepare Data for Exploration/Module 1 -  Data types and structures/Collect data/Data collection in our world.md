@@ -259,6 +259,10 @@ These tools are used because they allow organizations to collect structured info
 
 # Online Data and Cookies
 
+### To track people's online activities and interests, which method of data collection is most effective?
+- Cookies
+> To track people's online activities and interests, cookies are most effective
+
 Not all online data is generated directly or obviously.
 
 Some data is collected in the background while people use websites.
