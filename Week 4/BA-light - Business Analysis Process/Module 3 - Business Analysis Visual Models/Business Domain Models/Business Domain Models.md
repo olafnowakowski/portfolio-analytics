@@ -258,6 +258,7 @@ This happens because the analyst’s understanding of the business becomes clear
 They are added inside the class box.
 
 Attributes help explain what data the business has or needs about each class.
+<img width="402" height="256" alt="image" src="https://github.com/user-attachments/assets/7d306a52-43e9-44b6-9197-153e37d70f12" />
 
 ---
 
