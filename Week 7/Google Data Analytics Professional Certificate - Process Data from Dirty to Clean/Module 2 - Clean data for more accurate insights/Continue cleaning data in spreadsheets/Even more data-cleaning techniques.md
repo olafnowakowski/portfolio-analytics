@@ -14,7 +14,7 @@ A key technique for this is **data mapping**.
 
 **Data mapping** is the process of matching fields from one database or dataset to another.
 
-It helps make sure that data from different sources can be combined, transferred, or integrated correctly.
+It helps make sure that data from different sources can be combined, transferred, migrated, or integrated correctly.
 
 ---
 
@@ -30,7 +30,7 @@ Data mapping is important for:
 - making sure fields match correctly
 - maintaining data integrity
 
-Without data mapping, data can end up in the wrong place or in the wrong format.
+Without data mapping, data can end up in the wrong place, in the wrong format, or attached to the wrong record.
 
 ---
 
@@ -63,8 +63,6 @@ Combining customer data, purchase data, and location data into one analysis-read
 **Compatibility** describes how well two or more datasets are able to work together.
 
 Datasets are compatible when their fields, formats, and structures align well enough to be combined or compared.
-
----
 
 ## Example
 
@@ -99,8 +97,6 @@ This includes:
 - important identifiers
 - values that need to be preserved
 
----
-
 ## Example
 
 In a merger between two logistics associations, both organizations have member IDs.
@@ -114,8 +110,6 @@ The analyst needs to identify both member ID fields before mapping them into the
 After identifying the data, analysts need to define the desired format for the destination dataset.
 
 This means deciding what the data should look like after it is moved.
-
----
 
 ## Example
 
@@ -233,8 +227,6 @@ Before moving data, analysts need to understand what each field contains.
 
 This ensures each piece of data ends up in the correct place.
 
----
-
 ## Example
 
 Membership expiration dates from two associations should be consolidated into one column.
@@ -253,8 +245,6 @@ Membership Expiration Date
 
 This step is needed when the same type of information is stored differently across datasets.
 
----
-
 ## Example: Address Fields
 
 One logistics association stores suite, apartment, or unit number in a separate column.
@@ -271,9 +261,7 @@ Before merging, the analyst needs to standardize the address format.
 
 It can be used to combine address fields into one consistent format.
 
----
-
-## CONCATENATE Example
+## Basic CONCATENATE Example
 
 ```excel
 =CONCATENATE(A2," ",B2)
@@ -283,7 +271,47 @@ This joins the value in `A2`, a space, and the value in `B2`.
 
 ---
 
-# 16. Transferring the Data
+# 16. Pro Tip: Use CONCATENATE to Format Data While Merging
+
+When merging address fields, it is better to format the data correctly during the merge instead of manually fixing it later.
+
+For example, if you enter:
+
+```excel
+=CONCATENATE(D2,E2)
+```
+
+The result may appear like this:
+
+```text
+25 Dyas RdSte. 101
+```
+
+This is technically merged, but it is not formatted well because there is no space between `Rd` and `Ste.`.
+
+A better formula is:
+
+```excel
+=CONCATENATE(D2," ",E2)
+```
+
+This adds a space between the two text strings.
+
+The result becomes:
+
+```text
+25 Dyas Rd Ste. 101
+```
+
+## Key Lesson
+
+Because CONCATENATE joins strings exactly as written, you can add extra strings, such as spaces, punctuation, or separators, inside quotation marks.
+
+This helps create cleaner merged data immediately.
+
+---
+
+# 17. Transferring the Data
 
 After the data is mapped and transformed into a compatible format, it can be transferred to its destination.
 
@@ -298,7 +326,7 @@ Common transfer methods include:
 
 ---
 
-# 17. Testing the Mapped Data
+# 18. Testing the Mapped Data
 
 After transfer, analysts should test the data to make sure it moved correctly.
 
@@ -312,7 +340,7 @@ Testing helps confirm that the data is:
 
 ---
 
-# 18. Spot Checks
+# 19. Spot Checks
 
 A **spot check** means inspecting a sample of the data to confirm it looks correct.
 
@@ -328,7 +356,107 @@ Spot checks can include checking:
 
 ---
 
-# 19. Tools for Testing Data Mapping
+# 20. Reflect: Validating the Merged Logistics Association Data
+
+In the example, data from the **Global Logistics Association** spreadsheet is added to the target **International Logistics Association memberships** spreadsheet starting at row 73.
+
+The final merged result is contained in the third spreadsheet:
+
+```text
+Logistics Association Merger
+```
+
+After merging, analysts should validate the data by spot-checking the merged spreadsheet.
+
+---
+
+## Question 1: Was All the Data Merged?
+
+One way to check is to manually combine the row counts from the first two datasets.
+
+Then compare that total to the number of rows in the final merged spreadsheet.
+
+Ask:
+
+- Do the total rows from the first two datasets match the rows in the merged dataset?
+- Are any rows missing?
+- Are any rows duplicated?
+- Does the final spreadsheet contain all expected records?
+
+---
+
+## Question 2: Was Membership Data Migrated Correctly?
+
+Randomly select a few members from the **International Logistics Association** spreadsheet.
+
+Compare their information to the same records in the **Logistics Association Merger** spreadsheet.
+
+Then do the same for a few members from the **Global Logistics Association** spreadsheet.
+
+Check whether fields such as these migrated correctly:
+
+- member ID
+- first name
+- last name
+- address
+- dues
+- membership expiration date
+- membership type
+
+---
+
+## Question 3: Are the Data Formats Consistent?
+
+Check the data formats for each column in the merged spreadsheet.
+
+Look for inconsistencies in:
+
+- dates
+- currency
+- membership types
+- addresses
+- ID formats
+- text capitalization
+- blank or null values
+
+---
+
+## Example: Inconsistent Date Formatting
+
+In the merged spreadsheet, the `Membership valid through` column may contain inconsistent date formats.
+
+Examples:
+
+```text
+2/17/2021
+```
+
+and:
+
+```text
+Tuesday, November 9, 2021
+```
+
+These represent dates, but they are formatted differently.
+
+This inconsistency should be fixed before analysis.
+
+---
+
+## How to Fix Date Format Inconsistency
+
+To make the date format consistent:
+
+1. Select the entire date column, such as Column J.
+2. Select **Format** from the main menu.
+3. Select **Number**.
+4. Choose the date format you want all cells in the column to use.
+
+This standardizes the column and makes the data easier to analyze.
+
+---
+
+# 21. Tools for Testing Data Mapping
 
 Analysts can use previous data-cleaning tools to test mapped data.
 
@@ -341,10 +469,13 @@ Useful tools include:
 | COUNTIF | Counts values that meet a condition |
 | Sorting | Helps find duplicates or unusual values |
 | Filtering | Shows only records that meet specific criteria |
+| Row counts | Confirms all records were transferred |
+| Spot checks | Confirms sample records migrated correctly |
+| Date formatting | Standardizes inconsistent date formats |
 
 ---
 
-# 20. Why Data Mapping Prevents Bigger Problems
+# 22. Why Data Mapping Prevents Bigger Problems
 
 A single mistake during data mapping or merging can spread throughout an organization.
 
@@ -354,7 +485,7 @@ Good data mapping acts like a roadmap that helps data arrive safely and correctl
 
 ---
 
-# 21. Data Mapping Process Summary
+# 23. Data Mapping Process Summary
 
 | Step | Purpose |
 |---|---|
@@ -364,11 +495,12 @@ Good data mapping acts like a roadmap that helps data arrive safely and correctl
 | Transform data | Make formats consistent |
 | Transfer data | Move data to its destination |
 | Test data | Confirm data is clean, formatted, and compatible |
+| Spot-check merged data | Confirm rows, records, and formats migrated correctly |
 | Use for analysis | Begin analysis after confirming quality |
 
 ---
 
-# 22. Common Mistakes to Avoid
+# 24. Common Mistakes to Avoid
 
 ## Mistake 1: Moving data without mapping fields first
 
@@ -390,9 +522,21 @@ Primary and foreign keys affect how tables connect.
 
 Always inspect the merged or transferred dataset before analysis.
 
+## Mistake 6: Forgetting spaces in CONCATENATE
+
+If you join text strings without adding spaces, the result may be difficult to read or incorrectly formatted.
+
+## Mistake 7: Not checking row counts
+
+Always verify that the final merged dataset has the expected number of rows.
+
+## Mistake 8: Ignoring inconsistent date formats
+
+Dates should be standardized before analysis, especially when data comes from multiple sources.
+
 ---
 
-# 23. Key Takeaways
+# 25. Key Takeaways
 
 - Data mapping matches fields from one dataset or database to another.
 - Data mapping supports data migration, integration, and merging.
@@ -402,11 +546,15 @@ Always inspect the merged or transferred dataset before analysis.
 - Schemas, primary keys, and foreign keys can make mapping more complex.
 - Data mapping tools can automate cleaning, matching, inspecting, and validating data.
 - CONCATENATE can help transform fields into a consistent format.
+- When using CONCATENATE, add spaces or separators inside quotation marks when needed.
 - After transferring data, analysts should test and spot-check it.
+- Row counts can help confirm whether all data was merged.
+- Random member checks can confirm whether data migrated correctly.
+- Date formats should be standardized in merged datasets.
 - Good data mapping protects data integrity and prevents errors from spreading.
 
 ---
 
 # Final Summary
 
-Data mapping is the process of matching fields from one database or dataset to another. It is important when data is migrated, integrated, merged, or transferred between systems. Because different systems store data differently, analysts must identify what data needs to move, define the desired format, map fields correctly, transform inconsistent data, and test the final result. For example, one dataset may store a state as `Maryland`, while another stores it as `MD`; data mapping helps make these values compatible. Tools like CONCATENATE, data validation, conditional formatting, COUNTIF, sorting, and filtering can support the process. The main lesson is that data mapping provides a roadmap for moving data safely and accurately so it is ready for reliable analysis.
+Data mapping is the process of matching fields from one database or dataset to another. It is important when data is migrated, integrated, merged, or transferred between systems. Because different systems store data differently, analysts must identify what data needs to move, define the desired format, map fields correctly, transform inconsistent data, and test the final result. CONCATENATE can help format data during merging, especially when combining address fields. For example, `=CONCATENATE(D2," ",E2)` creates a cleaner result than `=CONCATENATE(D2,E2)` because it adds a space between the two fields. After merging, analysts should validate the results by checking row counts, comparing sample member records, and reviewing column formats. If dates are inconsistent, the entire date column should be reformatted. The main lesson is that data mapping provides a roadmap for moving data safely and accurately so it is clean, compatible, and ready for reliable analysis.
