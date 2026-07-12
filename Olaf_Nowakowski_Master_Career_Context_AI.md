@@ -161,7 +161,7 @@ Currently improving Excel further through the Data Analytics roadmap.
 
 #### Business Central / NAV
 
-Practical operational use, especially:
+Practical beginner operational use, especially:
 
 - checking prices after client damage;
 - supporting invoice creation for damaged/lost items;
@@ -172,7 +172,7 @@ Practical operational use, especially:
 
 #### n8n
 
-Practical personal-project experience building workflow automation with:
+Practical beginner personal-project experience building workflow automation with:
 
 - triggers;
 - code nodes;
@@ -1541,7 +1541,7 @@ Not included:
 ## 5.5 Software Tester / Game Beta Tester — additional projects / remote
 
 **Role:** Software Tester / Game Beta Tester / Community QA Support  
-**Period:** September 2019 – present  
+**Period:** September 2019 – March 2026 
 **Employment status:** Additional projects / remote / beta-user/community QA context. Do not claim formal full-time employment unless separately verified.
 
 ### 5.5.1 Role positioning
